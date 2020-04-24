@@ -4,4 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+/*
+In most cases, the best way to add global styles is with a shared layout
+component. Check out the docs for more on that approach.
+*/
+
+import "./src/styles/global.css"
