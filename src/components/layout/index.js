@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      {/* TODO menu here */}
       <div>
         <main style={{}}>{children}</main>
         <Footer />

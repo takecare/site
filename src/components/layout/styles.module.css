@@ -11,12 +11,12 @@ body {
 }
 
 main {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   padding: 0.5rem 0.05rem 0.05rem;
 }
 
 footer {
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 main,

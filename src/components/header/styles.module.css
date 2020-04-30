@@ -5,6 +5,7 @@ h1 {
 }
 
 .header {
+  margin: 2em;
   background: white;
   margin-bottom: 1.45rem;
 }

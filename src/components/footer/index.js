@@ -10,7 +10,7 @@ const Footer = ({ children }) => (
     <span className={styles.copy}>
       © {new Date().getFullYear()}, built with
       {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <a href="https://www.gatsbyjs.org">gatsby</a>
     </span>
   </footer>
 )
