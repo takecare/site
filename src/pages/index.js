@@ -12,6 +12,8 @@ import SEO from "../components/seo"
 const IndexPage = data => (
   <Layout>
     <SEO title="Home" />
+    {/* TODO menu component in layout */}
+    <Link to="/about/">about</Link>
     <p>
       hi, i'm rui.{" "}
       <Random
@@ -43,7 +45,6 @@ const IndexPage = data => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/about/">about</Link>
   </Layout>
 )
 
@@ -53,6 +54,11 @@ export const query = graphql`
       siteMetadata {
         title
       }
+    }
+    dataJson {
+      doing
+      focus
+      phrases
     }
   }
 `
