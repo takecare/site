@@ -26,4 +26,4 @@ const useMdxData = () => {
   return result
 }
 
-export { useMdxData }
+export default useMdxData

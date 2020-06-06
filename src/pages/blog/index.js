@@ -1,16 +1,21 @@
 import React from "react"
-import { useMdxData } from "../../hooks/useMdxData"
+import useMdxData from "../../hooks/useMdxData"
 import Layout from "../../components/layout"
+import { Link } from "gatsby"
 
 // TODO styles
 
 // TODO extract to components
+// FIXME shouldn't be destructuring as props.blog
 const BlogItem = ({ blog }) => {
+  const slug = blog.fields.slug
   return (
     <>
-      <h1>{blog.frontmatter.title}</h1>
-      <p>{blog.frontmatter.date}</p>
-      <p>{blog.excerpt}</p>
+      <h4>
+        <Link to={slug}>{blog.frontmatter.title}</Link>
+      </h4>
+      {/* <p>{blog.frontmatter.date}</p>
+      <p>{blog.excerpt}</p> */}
     </>
   )
 }
