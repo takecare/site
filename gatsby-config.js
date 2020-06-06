@@ -1,24 +1,12 @@
 const siteMetadata = {
   title: "rui vaz teixeira",
-  description: "personal webpage",
+  description: "a personal webpage",
   author: "@takecare",
 }
 
 module.exports = {
   siteMetadata,
   plugins: [
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "rui vaz teixeira",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png",
-      },
-    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -35,27 +23,16 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-mdx",
-      options: {
-        extensions: [".mdx", ".md"],
-      },
+      options: { extensions: [".mdx", ".md"] },
     },
-    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography",
-      },
+      options: { pathToConfigModule: "src/utils/typography" },
     },
-    "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
-      options: {
-        path: "./src/data/",
-      },
+      options: { path: "./src/data/" },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // "gatsby-plugin-offline",
   ],
 }
