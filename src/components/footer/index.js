@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from "./styles.module.css"
 
-// TODO add author in copyright via prop
+// TODO add author in copyright via prop (which is queried)
 
 const Footer = ({ children }) => (
   <footer>

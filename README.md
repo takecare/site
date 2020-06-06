@@ -10,11 +10,12 @@
 
 ### 👷‍♂️ WIP
 
-- Data in query-able format
 - Components to display phrases in the home page
 
 #### TODO
 
+- Menu component (+ link to blog)
+- Links to linkedin, twitter, github
 - Setting up default style in layout
 
 ### 🎓 Learn
@@ -48,5 +49,3 @@
 
 - [Firebase](https://www.gatsbyjs.org/docs/deploying-to-firebase/)
 - [Netlify](https://www.gatsbyjs.org/docs/deploying-to-netlify/)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
