@@ -1,3 +1,8 @@
+footer {
+  margin: 1vmin 0vmin;
+  display: block;
+}
+
 .copy {
   font-size: 0.75em;
 }
