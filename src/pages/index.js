@@ -5,15 +5,12 @@ import { useSiteMetadata } from "../hooks/usesitemetadata"
 import Layout from "../components/layout"
 import Random from "../components/random"
 import Dropdown from "../components/dropdown"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
 const IndexPage = data => {
   const { title, description } = useSiteMetadata()
 
   return (
     <Layout>
-      <SEO title={title} />
       <p>
         hi, i'm rui.{" "}
         <Random
