@@ -4,6 +4,7 @@ import Layout from "../../components/layout"
 
 // TODO styles
 
+// TODO extract to components
 const BlogItem = ({ blog }) => {
   return (
     <>
@@ -16,6 +17,7 @@ const BlogItem = ({ blog }) => {
 
 const Blog = () => {
   const data = useMdxData()
+  console.log(data)
   return (
     <Layout>
       {data.allMdx.nodes.map(node => (

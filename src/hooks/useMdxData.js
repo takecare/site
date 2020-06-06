@@ -15,6 +15,9 @@ const useMdxData = () => {
               title
               date
             }
+            fields {
+              slug
+            }
           }
         }
       }
