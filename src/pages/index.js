@@ -1,14 +1,11 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import { useSiteMetadata } from "../hooks/usesitemetadata"
 import Layout from "../components/layout"
 import Random from "../components/random"
 import Dropdown from "../components/dropdown"
 
 const IndexPage = data => {
-  const { title, description } = useSiteMetadata()
-
   return (
     <Layout>
       <p>
@@ -41,20 +38,5 @@ const IndexPage = data => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    dataJson {
-      doing
-      focus
-      phrases
-    }
-  }
-`
 
 export default IndexPage

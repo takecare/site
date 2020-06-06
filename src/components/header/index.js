@@ -4,22 +4,22 @@ import React from "react"
 
 import styles from "./styles.module.css"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ title }) => (
   <header className={styles.header}>
     <div>
       <h1>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/">{title}</Link>
       </h1>
     </div>
   </header>
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  title: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  title: ``,
 }
 
 export default Header
