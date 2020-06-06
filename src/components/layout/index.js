@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Menu from "../menu"
 import Header from "../header"
 import Footer from "../footer"
 
@@ -20,14 +21,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      {/* TODO menu here */}
+      <Menu />
       <div>
         <main style={{}}>{children}</main>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
